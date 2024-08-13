@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.game-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #ddd;
+    overflow: hidden;
+    border: 2px solid #000;
+}
+
+#ninja {
+    position: absolute;
+    bottom: 20px; /* Positioned above the grass */
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    background-image: url('ninja.PNG'); /* Replace with your ninja image */
+    background-size: cover;
+}
+
+.block {
+    position: absolute;
+    bottom: 20px; /* Positioned above the grass */
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+}
+
+.grass {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #0f0; /* Green color for grass */
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
